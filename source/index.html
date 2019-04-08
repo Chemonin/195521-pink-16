@@ -30,18 +30,18 @@
       <h1 class="visually-hidden">Мобильное приложение Pink</h1>
       <section class="get-app">
         <h2 class="get-app__banner">Скачать приложение</h2>
-        <ul class="get-app_list appstore-list">
-          <li class="appstore-list__item">
-            <a><img class="appstore-list_item--apple" src="#" width="100" height="100" alt="Лого Эппл"></a>
+        <ul class="get-app__list appstore-list">
+          <li class="appstore-list__image">
+            <a><img src="#" width="100" height="100" alt="Лого Эппл"></a>
           </li>
-          <li class="appstore-list__item">
-            <a><img class="appstore-list_item--android" src="#" width="100" height="100" alt="Лого Андройд"></a>
+          <li class="appstore-list__image">
+            <a><img src="#" width="100" height="100" alt="Лого Андройд"></a>
           </li>
-          <li class="appstore-list__item">
-            <a><img class="appstore-list_item--windows" src="#" width="100" height="100" alt="Лого Виндоуз"></a>
+          <li class="appstore-list__image">
+            <a><img src="#" width="100" height="100" alt="Лого Виндоуз"></a>
           </li>
         </ul>
-        <p class="get-app_environ">
+        <p class="get-app__environ">
           Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
         </p>
       </section>
@@ -82,38 +82,40 @@
               </p>
             </blockquote>
           </div>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
         </div>
-        <p class="reviews__toggles slider__toggles">
-          <button class="slider__toggle">1</button>
-          <button class="slider__toggle">2</button>
-          <button class="slider__toggle">3</button>
-        </p>
       </section>
       <section class="packages">
-        <h2 class="visually-hidden">Тарифы</h2>
-        <ul class="packages__list slider">
-          <li class="packages__item slider__item">
-            <p class="packages__name">Стандарт</p>
-            <p class="packages__price">3,99 USD</p>
-            <div class="packages__option">
-              <p>Розовый фильтр</p>
-              <img class="packages__option--enabled" src="#" width="100" height="100" alt="включено">
-            </div>
-            <div class="packages__option">
-              <p>Смайлики</p>
-              <img class="packages__option--enabled" src="#" width="100" height="100" alt="включено">
-            </div>
-            <div class="packages__option">
-              <p>Комментарии</p>
-              <img class="packages__option--disabled" src="#" width="100" height="100" alt="выключено">
-            </div>
-          </li>
-        </ul>
-        <p class="packages__toggles slider__toggles">
-          <button class="slider__toggle">1</button>
-          <button class="slider__toggle">2</button>
-          <button class="slider__toggle">3</button>
-        </p>
+        <div class="packages__wrapper slider"
+          <h2 class="visually-hidden">Тарифы</h2>
+          <ul class="packages__list slider__list">
+            <li class="packages__item slider__item">
+              <p class="packages__name">Стандарт</p>
+              <p class="packages__price">3,99 USD</p>
+              <div class="packages__option">
+                <span>Розовый фильтр</span>
+                <img class="packages__image" src="#" width="100" height="100" alt="включено">
+              </div>
+              <div class="packages__option">
+                <span>Смайлики</span>
+                <img class="packages__image" src="#" width="100" height="100" alt="включено">
+              </div>
+              <div class="packages__option">
+                <span>Комментарии</span>
+                <img class="packages__image" src="#" width="100" height="100" alt="выключено">
+              </div>
+            </li>
+          </ul>
+          <p class="packages__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
       </section>
     </main>
     <footer class="title-footer">
