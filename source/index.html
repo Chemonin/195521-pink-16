@@ -3,28 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <img class="page-header__logo-image" src="#" width="100" height="100" alt="Логотип приложения Пинк">
       <nav class="main-nav">
+        <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="100" height="100" alt="Логотип приложения Пинк">
         <button class="main-nav_toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a>Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Фотографии</a>
+            <a href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Конкурс</a>
+            <a href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="#">HTML Academy</a>
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
-        <img class="page-header__presentation-image" src="#" width="100" height="100" alt="Демонстрация приложения">
       </nav>
+      <img class="page-header__presentation-image" src="img/iphone-hand-mobile@1x.png" width="200" height="100" alt="Демонстрация приложения">
     </header>
     <main class="main-page">
       <h1 class="visually-hidden">Мобильное приложение Pink</h1>
@@ -32,13 +33,13 @@
         <h2 class="get-app__banner">Скачать приложение</h2>
         <ul class="get-app__list appstore-list">
           <li class="appstore-list__image">
-            <a><img src="#" width="100" height="100" alt="Лого Эппл"></a>
+            <a><img src="img/logo-apple.svg" width="50" height="50" alt="Лого Эппл"></a>
           </li>
           <li class="appstore-list__image">
-            <a><img src="#" width="100" height="100" alt="Лого Андройд"></a>
+            <a><img src="img/logo-android.svg" width="50" height="50" alt="Лого Андройд"></a>
           </li>
           <li class="appstore-list__image">
-            <a><img src="#" width="100" height="100" alt="Лого Виндоуз"></a>
+            <a><img src="img/logo-microsoft.svg" width="50" height="50" alt="Лого Виндоуз"></a>
           </li>
         </ul>
         <p class="get-app__environ">
@@ -90,7 +91,7 @@
         </div>
       </section>
       <section class="packages">
-        <div class="packages__wrapper slider"
+        <div class="packages__wrapper slider">
           <h2 class="visually-hidden">Тарифы</h2>
           <ul class="packages__list slider__list">
             <li class="packages__item slider__item">
@@ -98,15 +99,21 @@
               <p class="packages__price">3,99 USD</p>
               <div class="packages__option">
                 <span>Розовый фильтр</span>
-                <img class="packages__image" src="#" width="100" height="100" alt="включено">
+                <svg class="packages__image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                  <path fill="#3dc644" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
               </div>
               <div class="packages__option">
                 <span>Смайлики</span>
-                <img class="packages__image" src="#" width="100" height="100" alt="включено">
+                <svg class="packages__image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                  <path fill="#3dc644" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
               </div>
               <div class="packages__option">
                 <span>Комментарии</span>
-                <img class="packages__image" src="#" width="100" height="100" alt="выключено">
+                <svg class="packages__image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                  <path fill="#f25b26" d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                </svg>
               </div>
             </li>
           </ul>
