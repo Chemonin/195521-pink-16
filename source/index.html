@@ -12,7 +12,7 @@
         <button class="main-nav_toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a href="photo.html">Фотографии</a>
@@ -95,8 +95,10 @@
           <h2 class="visually-hidden">Тарифы</h2>
           <ul class="packages__list slider__list">
             <li class="packages__item slider__item">
-              <p class="packages__name">Стандарт</p>
-              <p class="packages__price">3,99 USD</p>
+              <div class="packages__header">
+                <p class="packages__name">Стандарт</p>
+                <p class="packages__price">3,99 USD</p>
+              </div>
               <div class="packages__option">
                 <span>Розовый фильтр</span>
                 <svg class="packages__image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
@@ -128,17 +130,18 @@
     <footer class="title-footer">
       <h1 class="visually-hidden">Наши контакты</h1>
       <div class="title-footer__contacts contacts">
-        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
-        <p class="contacts__phone">Звоните:<br>
-          <a class="contacts__phone-number" href="#">+7(812)555-66-66</a>
-        </p>
-        <p class="contacts__email">Звоните:<br>
-          <a class="contacts__email-address" href="#">mail@htmlacademy.ru</a>
-        </p>
-        <p class="contacts__post">Звоните:<br>
-          <a class="contacts__post-address" href="#">ул. Большая Конюшенная, 19/8</a>
-        </p>
-        <img class="contacts__map" src="#" width="320" height="200" alt="Адрес на карте">
+        <div class="contacts__wrapper">
+          <h2 class="contacts__banner">Остались вопросы? Свяжитесь с нами!</h2>
+          <p class="contacts__titles">Звоните:<br>
+            <a href="#">+7(812)555-66-66</a>
+          </p>
+          <p class="contacts__titles">Пишите:<br>
+            <a href="#">mail@htmlacademy.ru</a>
+          </p>
+          <p class="contacts__titles">Приезжайте в гости:<br>
+            <a href="#">ул. Большая Конюшенная, 19/8</a>
+          </p>
+        </div>
       </div>
     </footer>
   </body>

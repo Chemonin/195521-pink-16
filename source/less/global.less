@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff"), url("../fonts/opensans.woff2"),
+  url("../fonts/opensansbold.woff"), url("../fonts/opensansbold.woff2"),
+  url("../fonts/opensanslight.woff"), url("../fonts/opensanslight.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  margin: auto;
+  padding: 0;
+  width: 320px;
+
+  font-style: "Open Sans", Arial, san-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #283645;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
