@@ -1,16 +1,116 @@
 .photo-page {
-  margin: 0;
+  width: 320px;
   padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
   font-family: "Open Sans", sans-serif;
   color: #283645;
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
+
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 400px;
+}
 
-  &__attention {
-    margin-top: 170px;
-    min-height: 185px;
-    background-color: #ffffff;
+@media (min-width: @tablet-width) {
+  .photo-page {
+    width: 660px;
+
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -100px;
+    background-size: 200% auto;
   }
+}
+
+@media (min-width: @desktop-width) {
+    .photo-page {
+      width: 1200px;
+
+      background-image: none;
+    }
+}
+
+.photo-page__intro {
+  min-height: 355px;
+  .indent-reset();
+  padding-top: 35px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-page__intro {
+    min-height: 560px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-page__intro {
+    min-height: 525px;
+  }
+}
+
+.photo-page__title {
+  .indent-reset();
+
+  color: #ffffff;
+  font-size: 24px;
+  line-height: auto;
+  font-weight: 300;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-page__title {
+    font-size: 50px;
+    line-height: 58px;
+
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+    .photo-page__title {
+      width: 340px;
+      margin: 0 auto;
+      margin-top: 80px;
+    }
+}
+
+.photo-page__attention {
+  margin: 0;
+  padding: 55px 35px;
+
+  line-height: 30px;
+
+  background-color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+    .photo-page__attention {
+      padding-left: 90px;
+      padding-right: 90px;
+      padding-top: 100px;
+      padding-bottom: 80px;
+
+      font-size: 18px;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .photo-page__attention {
+      padding-left: 300px;
+      padding-right: 300px;
+      padding-top: 100px;
+      padding-bottom: 80px;
+
+      font-size: 18px;
+    }
 }
