@@ -1,6 +1,5 @@
 .social {
-  margin: 0;
-  padding: 0;
+  .indent-reset();
 
   font-size: 14px;
   line-height: 18px;
@@ -10,5 +9,18 @@
 }
 
 .social__list {
+  width: 176px;
+  display: flex;
+  justify-content: space-between;
   list-style: none;
+}
+
+.social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
 }

@@ -10,7 +10,6 @@
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   list-style: none;
-
   a {
     color: #ffffff;
   }
@@ -24,12 +23,22 @@
   }
 }
 
+.site-list__item {
+  .indent-reset();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 64px;
+
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
+}
+
 @media (min-width: @desktop-width) {
   .site-list__item {
-    .indent-reset();
-    display: flex;
     margin-left: 82px;
     font-weight: 400;
     line-height: 18px;
+    border: none;
   }
 }
