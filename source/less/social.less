@@ -1,21 +1,27 @@
 .social {
   .indent-reset();
+  width: 176px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
 
   background-color: #ffffff;
-}
 
-.social__list {
-  width: 176px;
-  display: flex;
-  justify-content: space-between;
   list-style: none;
 }
 
+@media (min-width: @tablet-width) {
+  .social {
+    flex-direction: row;
+  }
+}
+
 .social__item {
+  .indent-reset();
   display: flex;
   justify-content: center;
   align-items: center;

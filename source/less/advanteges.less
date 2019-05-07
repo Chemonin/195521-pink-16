@@ -1,6 +1,6 @@
 .advanteges {
   padding: 0;
-
+  margin: 0 auto;
 
   background-color: #f2f2f2;
   font-family: "Open Sans", sans-serif;
@@ -11,13 +11,29 @@
 
 @media (min-width: @tablet-width) {
   .advanteges {
-    width: 660px;
+    width: 100%;
   }
 }
 
 @media (min-width: @desktop-width) {
   .advanteges {
     width: 100%;
+  }
+}
+
+.advanteges__content {
+  width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .advanteges__content {
+    width: 620px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advanteges__content {
+    width: 1160px;
   }
 }
 
@@ -61,7 +77,7 @@
     min-height: 560px;
     width: 940px;
     margin: 0 auto;
-    border: 2px solid red;
+
     flex-direction: row;
     align-items: stretch;
 
