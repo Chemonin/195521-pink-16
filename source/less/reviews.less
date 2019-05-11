@@ -1,4 +1,10 @@
-.reviews {
+@media (min-width: @tablet-width) {
+  .reviews {
+    background-color: #ffffff;
+  }
+}
+
+.reviews__content {
   min-height: 350px;
 
   display: flex;
@@ -12,13 +18,13 @@
 }
 
 @media (min-width: @tablet-width) {
-  .reviews {
+  .reviews__content {
     min-height: 247px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .reviews {
+  .reviews__content {
     min-height: 420px;
 
     background-image: url("../img/icon-quotes.svg");
@@ -63,6 +69,10 @@
   .reviews__previous,
   .reviews__next {
     display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
   }
 }
 

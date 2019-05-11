@@ -1,7 +1,7 @@
 .advanteges {
-  padding: 0;
-  margin: 0 auto;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #f2f2f2;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -12,33 +12,94 @@
 @media (min-width: @tablet-width) {
   .advanteges {
     width: 100%;
+    padding: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .advanteges {
-    width: 100%;
-  }
-}
-
-.advanteges__content {
-  width: 280px;
-}
-
-@media (min-width: @tablet-width) {
-  .advanteges__content {
-    width: 620px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .advanteges__content {
-    width: 1160px;
+  .advanteges__issue,
+  .advanteges__answer {
+    font-size: 50px;
+    line-height: 60px;
   }
 }
 
 .advanteges__issue {
-  .indent-reset();
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 45px;
+  width: 300px;
+
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+}
+
+@media (min-width: @tablet-width) {
+  .advanteges__issue {
+    font-size: 40px;
+    line-height: 48px;
+
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advanteges__issue {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+.advanteges__answer {
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 35px;
+  width: 300px;
+
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+}
+
+@media (min-width: @tablet-width) {
+  .advanteges__answer {
+    font-size: 40px;
+    line-height: 48px;
+
+    width: 350px;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advanteges__answer {
+    font-size: 50px;
+    line-height: 60px;
+
+    width: 450px;
+    margin-bottom: 104px;
+  }
+}
+
+.advanteges__content {
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .advanteges__content {
+    margin: 0 auto;
+    width: 660px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advanteges__content {
+    padding: 0;
+    width: 1200px;
+  }
 }
 
 .advanteges__list {
@@ -79,19 +140,20 @@
     margin: 0 auto;
 
     flex-direction: row;
+    justify-content: space-between;
     align-items: stretch;
 
     background-image: none;
   }
 }
 
-.advanteges__duration {
-  display: none;
+.advanteges__item {
+  .indent-reset();
 }
-
 @media (min-width: @tablet-width) {
   .advanteges__item {
-    width: 320px;
+    width: 230px;
+    background-position: center top;
   }
 }
 
@@ -118,30 +180,106 @@
   }
 }
 
+.advanteges__duration {
+  .indent-reset();
+  display: none;
+
+}
+
 @media (min-width: @tablet-width) {
   .advanteges__duration {
     width: 100%;
-    min-height: 440px;
+    min-height: 300px;
+
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: flex-end;
 
-    background-color: #f2f2f2;
-    background-image: url("../img/icon-timer.svg");
-    background-repeat: no-repeat;
-    background-position: center left;
-    background-size: 237px 280px;
-
-    .advanteges__duration-wrapper {
-      width: 310px;
-    }
+    background-color: #ffffff;
   }
+}
+
+@media (min-width: @tablet-width) {
+  .advanteges__duration-wrapper {
+    width: 300px;
+
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advanteges__duration-wrapper {
+    width: 525px;
+  }
+
+  .advanteges__duration-wrapper br {
+    display: none;
+  }
+}
+
+.advanteges__time-effect {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: 700;
 }
 
 @media (min-width: @desktop-width) {
   .advanteges__duration {
     width: 940px;
     margin: 0 auto;
+
+    background-color: #f2f2f2;
   }
+}
+
+.advanteges__duration-content {
+  margin-bottom: 100px;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.advanteges__clock {
+  margin-right: 71px;
+
+  width: 239px;
+  height: 277px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  background-image: url("../img/icon-timer.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: 239px 277px;
+}
+
+@media (min-width: @desktop-width) {
+  .advanteges__clock {
+    margin-right: 71px;
+  }
+}
+
+.advanteges__clock-time {
+  width: 203px;
+  height: 203px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 14px solid #d22856;
+
+  position: absolute;
+  left: 19px;
+  bottom: 19px;
+
+  font-size: 96px;
+  line-height: 150px;
+  color: #d22856;
+}
+
+.advanteges__more {
+  font-size: 18px;
+  line-height: 30px;
+  color: #d22856;
+  text-decoration: underline;
 }
