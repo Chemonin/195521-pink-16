@@ -1,26 +1,40 @@
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/opensans.woff"),
-    url("../fonts/opensans.woff2"),
-    url("../fonts/opensansbold.woff"),
-    url("../fonts/opensansbold.woff2"),
-    url("../fonts/opensanslight.woff"),
-    url("../fonts/opensanslight.woff2");
+  src:
+    url("../fonts/opensans.woff") format("woff"),
+    url("../fonts/opensans.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("../fonts/opensansbold.woff") format("woff"),
+    url("../fonts/opensansbold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("../fonts/opensanslight.woff") format("woff"),
+    url("../fonts/opensanslight.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
 body {
-  margin: auto;
-  padding: 0;
-  width: 320px;
+  .indent-reset();
 
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: #283645;
-  background-color: #ffffff;
+  color: #ffffff;
+
+  background-color: #283645;
 }
 
 a {

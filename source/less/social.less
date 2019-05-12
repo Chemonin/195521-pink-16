@@ -1,14 +1,25 @@
 .social {
-  margin: 0;
-  padding: 0;
+  .indent-reset();
+  width: 176px;
+  display: flex;
+  justify-content: space-between;
 
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
 
   background-color: #ffffff;
+
+  list-style: none;
 }
 
-.social__list {
-  list-style: none;
+.social__item {
+  .indent-reset();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
 }

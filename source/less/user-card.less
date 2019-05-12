@@ -1,6 +1,51 @@
 .user-card {
-  margin: 0;
-  padding: 0;
+  width: 280px;
+  min-height: 300px;
+
   color: #283645;
   background-color: #f2f2f2;
+}
+
+@media (min-width: @tablet-width) {
+  .user-card {
+    width: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-card {
+    margin-bottom: 50px;
+  }
+}
+
+.user-card--panoramic {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.user-card--panoramic .user-card__image {
+  margin: 0 auto;
+}
+
+.user-card--panoramic .user-card__info {
+  margin: 0 auto;
+  width: 280px;
+
+  background-color: #f2f2f2;
+}
+
+@media (min-width: @tablet-width) {
+  .user-card--panoramic .user-card__info {
+    width: 620px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-card--panoramic .user-card__info {
+    width: 940px;
+    margin-bottom: 50px;
+  }
 }
