@@ -9,16 +9,16 @@
   <body>
     <header class="page-header">
       <nav class="main-nav container">
-        <div class="main-nav__content">
-          <div class="main-nav__header main-nav__header--closed">
+        <div class="main-nav__content main-nav__content--opened main-nav__content--nojs">
+          <div class="main-nav__header">
             <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="100" height="100" alt="Логотип приложения Пинк">
-            <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
           </div>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="index.html">Главная</a>
+              <a>Главная</a>
             </li>
             <li class="site-list__item">
               <a href="photo.html">Фотографии</a>
@@ -35,7 +35,7 @@
       <section class="get-app container">
         <img class="get-app__image" src="img/iphone-hand-mobile@1x.png" width="100" height="100" alt="Демонстрация приложения">
         <div class="get-app__content">
-          <h2 class="get-app__banner">Скачать приложение</h2>
+          <button class="get-app__banner" type="button">Скачать приложение</button>
           <p class="get-app__slogan">Взгляните на жизнь иначе</p>
           <ul class="get-app__list appstore-list">
             <li class="appstore-list__image">
@@ -227,5 +227,20 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      var navCont = document.querySelector('.main-nav__content');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navToggle.addEventListener('click', function() {
+        if (navCont.classList.contains('.main-nav__content--opened')) {
+          navCont.classList.remove('.main-nav__content--opened');
+          navCont.classList.add('.main-nav__content--closed');
+        } else {
+          navCont.classList.add('.main-nav__content--closed');
+          navCont.classList.remove('.main-nav__content--opened');
+        }
+      });
+    </script>
   </body>
 </html>
