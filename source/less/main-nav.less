@@ -35,7 +35,7 @@
   font-size: 18px;
   font-weight: 700px;
   color: #ffffff;
-  background-color: #283645;
+  background-color: transparent;
 }
 
 @media (min-width: @tablet-width) {
@@ -114,6 +114,30 @@
   }
 }
 
+// .main-nav__content--closed {
+//   background-image: url("../img/bg-back-mobile@1x.jpg");
+//   background-repeat: no-repeat;
+//   background-position: center top;
+//   background-size: content;
+//   background-color: #283645;
+// }
+//
+// @media (min-width: @tablet-width) {
+//   .main-nav__content--closed {
+//     background-image: url("../img/bg-back-tablet@1x.jpg");
+//     background-repeat: no-repeat;
+//     background-position: center top;
+//     background-size: content;
+//     background-color: #283645;
+//   }
+// }
+//
+// @media (min-width: @desktop-width) {
+//   .main-nav__content--closed {
+//     background: none;
+//   }
+// }
+
 .main-nav__content--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
@@ -174,5 +198,55 @@
 @media (max-width: @desktop-width) {
   .main-nav__content--closed .site-list__item {
     display: none;
+  }
+}
+@media (max-width: @desktop-width) {
+    .main-nav__content--closed .main-nav__header {
+      background-color: rgba(40, 54, 69, 0.7);
+      border-bottom: none;
+    }
+}
+
+@media (max-width: @desktop-width) {
+  .main-nav__content--nojs .site-list__item {
+    display: block;
+  }
+
+  .main-nav__content--nojs .main-nav__toggle {
+    &::before,
+    &::after {
+      content: "";
+
+      position: absolute;
+      left: 8px;
+
+      width: 34px;
+      height: 3px;
+
+      background-color: #ffffff;
+      box-shadow: none;
+    }
+
+    &::before {
+      top: 8px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      top: 8px;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .main-nav__content--nojs .main-nav__toggle:hover::after,
+  .main-nav__content--nojs .main-nav__toggle:hover::before {
+    background-color: #d22856;
+    box-shadow: none;
+  }
+
+  .main-nav__content--nojs .main-nav__toggle:active::after,
+  .main-nav__content--nojs .main-nav__toggle:active::before {
+    background-color: rgba(210,40,86, 0.3);
+    box-shadow: none;
   }
 }
