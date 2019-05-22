@@ -31,5 +31,55 @@
 .users-photo__item {
   margin: 0 auto;
   padding: 0;
-  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.users-photo__offer,
+.users-photo__placing {
+  margin: 0 auto;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .users-photo__offer,
+  .users-photo__placing {
+    font-size: 18px;
+  }
+}
+
+.users-photo__offer {
+  margin-top: 42px;
+}
+
+@media (min-width: @tablet-width) {
+  .users-photo__offer {
+    margin-top: 68px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .users-photo__offer {
+    margin-top: 62px;
+  }
+}
+
+.users-photo__placing {
+  margin-bottom: 42px;
+}
+
+@media (min-width: @tablet-width) {
+  .users-photo__placing {
+    margin-bottom: 68px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .users-photo__placing {
+    margin-bottom: 62px;
+  }
 }
