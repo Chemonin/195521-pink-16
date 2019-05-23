@@ -38,6 +38,68 @@
     </header>
     <main class="form-page">
       <h1 class="visually-hidden">Конкурс</h1>
+      <section class="container form">
+        <p class="form__title">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          <span>Пожалуйста, заполните форму ниже:</span>
+        </p>
+        <form class="form__data">
+          <div class="form__fullname">
+            <label class="form__field-title form__field-title--surname" for="surname">Фамилия:</label>
+            <input class="form__field form__field--surname" type="text" id="surname" name="form-surname" placeholder="Укажите фамилию*">
+            <label class="form__field-title form__field-title--name" for="name">Имя:</label>
+            <input class="form__field form__field--name" type="text" id="name" name="form-name" placeholder="Введите ваше имя*">
+            <label class="form__field-title form__field-title--patronymic" for="patronymic">Отчество:</label>
+            <input class="form__field form__field--patronymic" type="text" id="patronymic" name="form-patronymic" placeholder="Ну и отчество тоже">
+          </div>
+          <fieldset class="form__progress">
+            <legend class="form__titles form__titles--progress">Ваши безбашенные достижения в путешествии</legend>
+
+            <input class="visually-hidden form__progress-checkbox" type="checkbox" name="shark" id="shark-filter" checked>
+            <label class="form__progress-name" for="shark-filter">Сделал селфи с акулой</label>
+
+            <input class="visually-hidden form__progress-checkbox" type="checkbox" name="beach" id="beach-filter" checked>
+            <label class="form__progress-name" for="beach-filter">Обгорел на пляже</label>
+
+            <input class="visually-hidden form__progress-checkbox" type="checkbox" name="chuck" id="chuck-filter">
+            <label class="form__progress-name" for="chuck-filter">Видел Чака Норриса</label>
+
+            <input class="visually-hidden form__progress-checkbox" type="checkbox" name="souvenir" id="souvenir-filter">
+            <label class="form__progress-name" for="souvenir-filter">Накупил сувениров</label>
+
+            <input class="visually-hidden form__progress-checkbox" type="checkbox" name="tower" id="tower-filter" checked>
+            <label class="form__progress-name" for="tower-filter">Удержал башню</label>
+
+            <input class="visually-hidden form__progress-checkbox" type="checkbox" name="hotel" id="hotel-filter">
+            <label class="form__progress-name" for="hotel-filter">Разгромил отель</label>
+          </fieldset>
+          <fieldset class="form__contacts">
+            <legend class="form__titles form__titles--contacts">Контактная информация</legend>
+            <label class="form__field-title form__field-title--phone" for="phone">Номер телефона</label>
+            <input class="form__field form__field--phone" type="text" id="phone" name="form-phone" placeholder="Номер, пожалуйста">
+            <label class="form__field-title form__field-title--email" for="email">Адрес почты</label>
+            <input class="form__field form__field--email" type="text" id="email" name="form-email" placeholder="Введите почту*">
+          </fieldset>
+          <fieldset class="form__application">
+            <legend class="form__titles form__titles--application">С каким приложением путешествовали?</legend>
+
+            <input class="visually-hidden form__radio form__radio-ios" type="radio" id="ios" name="application" checked>
+            <label class="form__app-environ" for="ios">Pink для iOS</label>
+
+            <input class="visually-hidden form__radio form__radio-android" type="radio" id="android" name="application">
+            <label class="form__app-environ" for="android">Pink на Android</label>
+
+            <input class="visually-hidden form__radio form__radio-windows" type="radio" id="windows" name="application">
+            <label class="form__app-environ" for="windows">Windows Phone</label>
+          </fieldset>
+          <fieldset class="form__emotions">
+            <legend class="form__titles form__titles--emotions">опишите свои эмоции</legend>
+              <textarea class="form__field form__field--emotions" name="form-emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <button class="form__send" type="submit">отправить форму</button>
+          <p class="form__necessarily"><sup>*</sup>-обязательные <span>для заполнения</span> поля</p>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="container page-footer__content">

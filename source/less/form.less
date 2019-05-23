@@ -1,0 +1,259 @@
+.form {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    width: 100%;
+  }
+}
+
+.form__title {
+  .indent-reset();
+  width: 280px;
+  margin-top: 47px;
+  margin-bottom: 42px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.form__title span {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .form__title span {
+    display: inline-block;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__title {
+    width: 490px;
+    margin-top: 95px;
+    margin-bottom: 70px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__title {
+    width: 760px;
+  }
+}
+
+.form__data {
+  display: flex;
+  flex-direction: column;
+  //border: 1px solid red;
+}
+
+.form__fullname {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  //border: 1px solid green;
+}
+
+.form__field-title {
+  margin-left: 23px;
+  margin-bottom: 7px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.form__field {
+  padding-left: 23px;
+  padding-top: 17px;
+  padding-bottom: 11px;
+  margin-bottom: 19px;
+  width: 100%;
+  box-sizing: border-box;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645;
+
+  background-color: transparent;
+  border: 2px solid #e5e5e5;
+}
+
+.form__progress {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.form__titles {
+  font-size: 14px;
+  line-height: 18px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.form__titles--progress {
+  position: absolute;
+  left: 50%;
+  top: 40px;
+  margin-left: -113px;
+  width: 226px;
+  //border: 1px solid red;
+}
+
+.form__progress-name {
+  position: relative;
+  margin-left: 90px;
+  margin-bottom: 52px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645;
+  //border: 1px solid red;
+}
+
+.form__progress-name::before {
+  position: absolute;
+  left: -85px;
+  top: -4px;
+  content: "";
+  width: 39px;
+  height: 39px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: 2px solid #e5e5e5;
+}
+
+.form__progress-checkbox:checked + .form__progress-name::before {
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: none;
+}
+
+.form__titles--contacts {
+  display: none;
+}
+
+.form__application {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.form__titles--application {
+  position: absolute;
+  left: 50%;
+  top: 40px;
+  margin-left: -113px;
+  width: 226px;
+  //border: 1px solid red;
+}
+
+.form__app-environ {
+  position: relative;
+  margin-left: 90px;
+  margin-bottom: 52px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645;
+}
+
+.form__app-environ::before {
+  position: absolute;
+  left: -85px;
+  top: -4px;
+  content: "";
+  width: 39px;
+  height: 39px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.form__radio:checked + .form__app-environ::after {
+  position: absolute;
+  left: -73px;
+  top: 8px;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #d22856;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.form__emotions {
+  border: none;
+}
+
+.form__titles--emotions {
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.form__field--emotions {
+  width: 280px;
+  min-height: 197px;
+  padding-left: 20px;
+  //padding-right: 20px;
+}
+
+.form__send {
+  margin: 0 auto;
+  margin-top: 48px;
+  width: 280px;
+  height: 63px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: #2aab6d;
+  border: none;
+}
+
+.form__necessarily {
+  margin-top: 36px;
+  font-size: 14px;
+  line-height: 30px;
+
+  sup {
+    color: #d22856;
+  }
+
+  span {
+    display: none;
+  }
+}
