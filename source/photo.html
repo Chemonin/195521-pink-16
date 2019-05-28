@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
@@ -9,7 +10,7 @@
   <body>
     <header class="page-header">
       <nav class="container main-nav">
-        <div class="main-nav__content main-nav__content--opened">
+        <div class="main-nav__content main-nav__content--closed main-nav__content--nojs">
           <div class="main-nav__header">
             <a href="index.html">
               <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="100" height="100" alt="Логотип приложения Пинк">
@@ -43,103 +44,223 @@
       </div>
       <section class="container users-photo">
         <article class="users-photo__item user-card user-card--panoramic">
-          <img class="user-card__image user-card__image--panoramic" src="img/panorama-mobile@1x.jpg" width="300" height="200" alt="Панорамный вид">
-          <blockquote class="user-card__info">
-            <cite class="user-card__name">
-              <a href="#">Анна</a>
-              <span class="user-card__online">(5 минут назад)</span>
-            </cite>
+          <a href="#">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="user-card__image user-card__image--panoramic" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@1x.jpg 1x, img/panorama-mobile@2x.jpg 2x" width="320px" height="137px" alt="Панорамный вид">
+            </picture>
+          </a>
+          <blockquote class="user-card__info user-card__info--panoramic">
+            <a href="#" class="user-card__name">Анна<span class="user-card__online">(5 минут назад)</span></a>
             <p class="user-card__text">
               Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
             </p>
-            <button class="user-card__like" type="button">нравится:215</button>
+            <button class="user-card__like" type="button">
+              <svg class="user-card__like-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                <g>
+                  <path fill="#d22856" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                </g>
+              </svg>
+              нравится: 215
+            </button>
           </blockquote>
         </article>
         <div class="user-photo__simple">
           <article class="users-photo__item user-card">
-            <img class="user-card__image" src="img/photo-car-mobile@1x.jpg" width="300" height="200" alt="Автомобиль">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="user-card__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@1x.jpg 1x, img/photo-car-mobile@2x.jpg 2x" width="280px" height="180px" alt="Автомобиль">
+              </picture>
+            </a>
             <blockquote class="user-card__info">
-              <cite class="user-card__name">
-                <a href="#">Левон</a>
-                <span class="user-card__online">(5 часов назад)</span>
-              </cite>
+              <a href="#" class="user-card__name">Левон<span class="user-card__online">(5 часов назад)</span></a>
               <p class="user-card__text">
                 Вчера он на луну летал, сегодня в руки к нам попал.
               </p>
-              <button class="user-card__like" type="button">нравится:356</button>
+              <button class="user-card__like" type="button">
+                <svg class="user-card__like-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                  <g>
+                    <path fill="#d22856" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                  </g>
+                </svg>
+                нравится: 356
+              </button>
             </blockquote>
           </article>
           <article class="users-photo__item user-card">
-            <img class="user-card__image" src="img/photo-drumset-mobile@1x.jpg" width="300" height="200" alt="Барабаны">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="user-card__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@1x.jpg 1x, img/photo-drumset-mobile@2x.jpg 2x" width="280px" height="180px" alt="Барабаны">
+              </picture>
+            </a>
             <blockquote class="user-card__info">
-              <cite class="user-card__name">
-                <a href="#">Антон</a>
-                <span class="user-card__online">(12 часов назад)</span>
-              </cite>
+              <a href="#" class="user-card__name">Антон<span class="user-card__online">(12 часов назад)</span></a>
               <p class="user-card__text">
                 Соседи будут рады!
               </p>
-              <button class="user-card__like" type="button">нравится:666</button>
+              <button class="user-card__like" type="button">
+                <svg class="user-card__like-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                  <g>
+                    <path fill="#d22856" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                  </g>
+                </svg>
+                нравится: 666
+              </button>
             </blockquote>
           </article>
           <article class="users-photo__item user-card">
-            <img class="user-card__image" src="img/photo-window-mobile@1x.jpg" width="300" height="200" alt="Небо над крышей">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img class="user-card__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@1x.jpg 1x, img/photo-window-mobile@2x.jpg 2x" width="280px" height="180px" alt="Небо над крышей">
+              </picture>
+            </a>
             <blockquote class="user-card__info">
-              <cite class="user-card__name">
-                <a href="#">Борис</a>
-                <span class="user-card__online">(20 часов назад)</span>
-              </cite>
+              <a href="#" class="user-card__name">Борис<span class="user-card__online">(20 часов назад)</span></a>
               <p class="user-card__text">
                 Здесь могла быть ваша цитата о высоком и вечном.
               </p>
-              <button class="user-card__like" type="button">нравится:215</button>
+              <button class="user-card__like" type="button">
+                <svg class="user-card__like-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                  <g>
+                    <path fill="#d22856" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                  </g>
+                </svg>
+                нравится: 215
+              </button>
             </blockquote>
           </article>
           <article class="users-photo__item user-card">
-            <img class="user-card__image" src="img/photo-fair-mobile@1x.jpg" width="300" height="200" alt="Кубанский рынок">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="user-card__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@1x.jpg 1x, img/photo-fair-mobile@2x.jpg 2x" width="280px" height="180px" alt="Кубанский рынок">
+              </picture>
+            </a>
             <blockquote class="user-card__info">
-              <cite class="user-card__name">
-                <a href="#">Сергей</a>
-                <span class="user-card__online">(25 часов назад)</span>
-              </cite>
+              <a href="#" class="user-card__name">Сергей<span class="user-card__online">(25 часов назад)</span></a>
               <p class="user-card__text">
                 Самая кубанская в мире!
               </p>
-              <button class="user-card__like" type="button">нравится:4</button>
+              <button class="user-card__like" type="button">
+                <svg class="user-card__like-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                  <g>
+                    <path fill="#d22856" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                  </g>
+                </svg>
+                нравится: 4
+              </button>
             </blockquote>
           </article>
           <article class="users-photo__item user-card">
-            <img class="user-card__image" src="img/photo-pov-mobile@1x.jpg" width="300" height="200" alt="Горный спуск">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="user-card__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@1x.jpg 1x, img/photo-pov-mobile@2x.jpg 2x" width="280px" height="180px" alt="Горный спуск">
+              </picture>
+            </a>
             <blockquote class="user-card__info">
-              <cite class="user-card__name">
-                <a href="#">Максим</a>
-                <span class="user-card__online">(40 часов назад)</span>
-              </cite>
+              <a href="#" class="user-card__name">Максим<span class="user-card__online">(40 часов назад)</span></a>
               <p class="user-card__text">
                 Где снег-то?
               </p>
-              <button class="user-card__like" type="button">нравится:150</button>
+              <button class="user-card__like" type="button">
+                <svg class="user-card__like-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                  <g>
+                    <path fill="#d22856" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                  </g>
+                </svg>
+                нравится: 150
+              </button>
             </blockquote>
           </article>
           <article class="users-photo__item user-card">
-            <img class="user-card__image" src="img/photo-wing-mobile@1x.jpg" width="300" height="200" alt="Крыло самолета">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="user-card__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@1x.jpg 1x, img/photo-wing-mobile@2x.jpg 2x" width="280px" height="180px" alt="Крыло самолета">
+              </picture>
+            </a>
             <blockquote class="user-card__info">
-              <cite class="user-card__name">
-                <a href="#">Надежда</a>
-                <span class="user-card__online">(45 часов назад)</span>
-              </cite>
+              <a href="#" class="user-card__name">Надежда<span class="user-card__online">(45 часов назад)</span></a>
               <p class="user-card__text">
                 Всем GM и взаимные лайки!
               </p>
-              <button class="user-card__like" type="button">нравится:2560</button>
+              <button class="user-card__like" type="button">
+                <svg class="user-card__like-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                  <g>
+                    <path fill="#d22856" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                  </g>
+                </svg>
+                нравится: 2560
+              </button>
             </blockquote>
           </article>
+        </div>
+        <p class="users-photo__offer">Затмите из всех!</p>
+        <p class="users-photo__placing">Выкладывайте все, что накопилось в телефоне!</p>
+      </section>
+      <section class="photo-adjust">
+        <div class="container photo-adjust__wrapper">
+          <picture>
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+            <img class="photo-adjust__preview" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@1x.jpg 1x, img/photo-road-mobile@2x.jpg 2x" width="280px" height="374px" alt="Фото снежной дороги">
+          </picture>
+          <form class="photo-adjust__menu" method="get" action="https://echo.htmlacademy.ru">
+            <div class="photo-adjust__filters">
+                <input class="visually-hidden photo-adjust__checkbox" type="checkbox" name="crop" id="crop-filter" checked>
+                <label class="photo-adjust__filter photo-adjust__filter--crop" for="crop-filter">
+                  <svg class="photo-adjust__icon photo-adjust__icon--crop" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path fill="none" d="M0,0h48v48H0V0z"/>
+                    <path fill="currentColor" d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                  </svg>
+                </label>
+                <div class="photo-adjust__bar photo-adjust__bar--crop">
+                  <span class="photo-adjust__toggle photo-adjust__toggle--crop"></span>
+                </div>
+                <input class="visually-hidden photo-adjust__checkbox" type="checkbox" name="fill" id="fill-filter">
+                <label class="photo-adjust__filter photo-adjust__filter--fill" for="fill-filter">
+                  <svg class="photo-adjust__icon photo-adjust__icon--fill" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path fill="none" d="M0,0h48v48H0V0z"/>
+                    <path fill="currentColor" d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                    <rect fill="currentColor" y="40" width="48" height="3"/>
+                  </svg>
+                </label>
+                <div class="photo-adjust__bar photo-adjust__bar--fill">
+                  <span class="photo-adjust__toggle photo-adjust__toggle--fill"></span>
+                </div>
+                <input class="visually-hidden photo-adjust__checkbox" type="checkbox" name="contrast" id="contrast-filter">
+                <label class="photo-adjust__filter photo-adjust__filter--contrast" for="contrast-filter">
+                  <svg class="photo-adjust__icon photo-adjust__icon--crop" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                    <path fill="currentColor" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                    <path fill="currentColor" d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                  </svg>
+                </label>
+                <div class="photo-adjust__bar photo-adjust__bar--contrast">
+                  <span class="photo-adjust__toggle photo-adjust__toggle--contrast"></span>
+                </div>
+            </div>
+            <button class="photo-adjust__send" type="submit">Запостить</button>
+            <button class="photo-adjust__reset" type="reset">Отмена</button>
+          </form>
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="container page-footer__content">
-        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="100" height="100" alt="Логотип приложения Пинк">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип приложения Пинк">
+        </picture>
         <ul class="page-footer__social social">
           <li class="social__item">
             <a class="social__link social__link--tweeter" href="№">
@@ -181,5 +302,6 @@
         </div>
       </div>
     </footer>
+    <!-- <script src="js/main-nav.js"></script> -->
   </body>
 </html>

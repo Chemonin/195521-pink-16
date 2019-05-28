@@ -21,7 +21,7 @@
     }
 
     &:active {
-      color: rgba(210,40,86, 0.3);
+      color: rgba(210, 40, 86, 0.3);
     }
   }
 }
@@ -35,11 +35,12 @@
 }
 
 .site-list__item {
-  .indent-reset();
+  padding: 15px 0;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 64px;
+
 
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000000;
@@ -51,5 +52,9 @@
     font-weight: 400;
     line-height: 18px;
     border: none;
+
+    a {
+      text-transform: none;
+    }
   }
 }

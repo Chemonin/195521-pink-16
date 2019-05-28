@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
@@ -9,9 +10,13 @@
   <body>
     <header class="page-header">
       <nav class="main-nav container">
-        <div class="main-nav__content main-nav__content--opened main-nav__content--nojs">
+        <div class="main-nav__content main-nav__content--closed main-nav__content--nojs">
           <div class="main-nav__header">
-            <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="100" height="100" alt="Логотип приложения Пинк">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg" width="146" height="40">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="100" height="100" alt="Логотип приложения Пинк">
+            </picture>
           </div>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -33,19 +38,23 @@
         </div>
       </nav>
       <section class="get-app container">
-        <img class="get-app__image" src="img/iphone-hand-mobile@1x.png" width="100" height="100" alt="Демонстрация приложения">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+          <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+          <img class="get-app__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x"  width="258" height="286" alt="Демонстрация приложения">
+        </picture>
         <div class="get-app__content">
           <button class="get-app__banner" type="button">Скачать приложение</button>
-          <p class="get-app__slogan">Взгляните на жизнь иначе</p>
+          <p class="get-app__slogan">Взгляните на жизнь иначе!</p>
           <ul class="get-app__list appstore-list">
             <li class="appstore-list__image">
-              <a href="#"><img src="img/logo-apple.svg" width="50" height="50" alt="Лого Эппл"></a>
+              <a href="#"><img src="img/logo-apple.svg" width="46" height="57" alt="Лого Эппл"></a>
             </li>
             <li class="appstore-list__image">
-              <a href="#"><img src="img/logo-android.svg" width="50" height="50" alt="Лого Андройд"></a>
+              <a href="#"><img src="img/logo-android.svg" width="42" height="47" alt="Лого Андройд"></a>
             </li>
             <li class="appstore-list__image">
-              <a href="#"><img src="img/logo-microsoft.svg" width="50" height="50" alt="Лого Виндоуз"></a>
+              <a href="#"><img src="img/logo-microsoft.svg" width="44" height="42" alt="Лого Виндоуз"></a>
             </li>
           </ul>
           <p class="get-app__environ">
@@ -57,10 +66,13 @@
     <main class="main-page">
       <h1 class="visually-hidden">Мобильное приложение Pink</h1>
       <section class="container advanteges">
-        <div class="advanteges__content">
-          <h2 class="visually-hidden">Приемущества приложения Pink</h2>
+        <h2 class="visually-hidden">Приемущества приложения Pink</h2>
+        <div class="advanteges__header">
           <p class="advanteges__issue">Устали от серости мегаполиса?</p>
           <p class="advanteges__answer">Нам есть, что вам предложить!</p>
+        </div>
+        <div class="advanteges__content">
+          <img class="advanteges__image" src="img/iphone-screen-3-tablet@1x.png" srcset="img/iphone-screen-3-tablet@2x.png 2x" width="268" height="481" alt="Логотип приложения Пинк">
           <ul class="advanteges__list">
             <li class="advanteges__item">
               <h3 class="advanteges__title">Поднимает настроение</h3>
@@ -71,11 +83,11 @@
             <li class="advanteges__item">
               <h3 class="advanteges__title">Меняет мир вокруг</h3>
               <p class="advanteges__description">
-                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br> усилить эффект
               </p>
             </li>
             <li class="advanteges__item">
-              <h3 class="advanteges__title">Заводит новых друзей</h3>
+              <h3 class="advanteges__title">Заводит<br> новых друзей</h3>
               <p class="advanteges__description">
                 Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
               </p>
@@ -88,18 +100,18 @@
               <span class="advanteges__clock-time">24</span>
             </div>
             <div class="advanteges__duration-wrapper">
-              <h3 class="advanteges__time-effect">Эффект<br> на 24 часа</h3>
+              <h3 class="advanteges__time-effect">Эффект<br> на 24 часа!</h3>
               <p class="advanteges__research">Британские ученые провели исследования
-                и доказали, что положительный эффект<br> от использования приложения длится целые сутки!
+                и доказали,<br> что положительный эффект<br> от использования приложения длится целые сутки!
               </p>
               <a class="advanteges__more" href="#">Узнать больше об исследовании</a>
             </div>
           </div>
         </article>
       </section>
-      <section class="reviews">
-        <div class="container reviews__content">
-          <div class="reviews__wrapper slider">
+      <section class="container reviews">
+        <div class="reviews__content">
+          <div class="reviews__wrapper">
             <h2 class="visually-hidden">Отзывы о Pink</h2>
             <button class="reviews__previous" type="button">
               <span class="visually-hidden">Назад</span>
@@ -107,8 +119,8 @@
                 <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
               </svg>
             </button>
-            <div class="reviews__list slider__list">
-              <blockquote class="reviews__item slider__item">
+            <div class="reviews__list">
+              <blockquote class="reviews__item">
                 <cite class="reviews__author-name">Николай Петров</cite>
                 <p class="reviews__author-is">25 лет, водитель трамвая</p>
                 <p class="reviews__text">
@@ -123,69 +135,145 @@
                 <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
               </svg>
             </button>
-            <p class="reviews__toggles slider__toggles">
-              <button class="slider__toggle" type="button">1</button>
-              <button class="slider__toggle" type="button">2</button>
-              <button class="slider__toggle" type="button">3</button>
+            <p class="reviews__toggles">
+              <button class="reviews__toggle" type="button"><span class="visually-hidden">1</span></button>
+              <button class="reviews__toggle" type="button"><span class="visually-hidden">2</span></button>
+              <button class="reviews__toggle" type="button"><span class="visually-hidden">3</span></button>
             </p>
           </div>
         </div>
       </section>
-      <!-- <section class="packages">
-        <div class="packages__wrapper slider">
+      <section class="packages">
+        <div class="container packages__wrapper">
           <h2 class="visually-hidden">Тарифы</h2>
-          <ul class="packages__list slider__list">
-            <li class="packages__item slider__item">
-              <div class="packages__header">
+          <div class="packages__list">
+            <ul class="packages__headers-list">
+              <li class="packages__header">
+                <p class="packages__name">Название тарифа</p>
+              </li>
+              <li class="packages__header">
+                <p class="packages__name">База</p>
+                <p class="packages__price">1,99 USD</p>
+              </li>
+              <li class="packages__header">
+                <span class="packages__hit">хит</span>
+                <picture>
+                  <source media="(min-width: 660px)" srcset="img/bg-hit-tablet.svg 1x">
+                  <img class="packages__mark" src="img/bg-hit.svg" width="74" height="73" alt="Демонстрация приложения">
+                </picture>
                 <p class="packages__name">Стандарт</p>
                 <p class="packages__price">3,99 USD</p>
-              </div>
-              <div class="packages__option">
-                <span>Розовый фильтр</span>
-                <svg class="packages__image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+              </li>
+              <li class="packages__header">
+                <p class="packages__name">Анлим</p>
+                <p class="packages__price">9,99 USD</p>
+              </li>
+            </ul>
+            <ul class="packages__item">
+              <li class="packages__option">
+                <p class="packages__option-name">Розовый фильтр</p>
+              </li>
+              <li class="packages__option">
+                <p class="packages__option-name">Розовый фильтр</p>
+                <svg class="packages__image packages__image--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                   <path fill="#3dc644" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                 </svg>
-              </div>
-              <div class="packages__option">
-                <span>Смайлики</span>
-                <svg class="packages__image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+              </li>
+              <li class="packages__option">
+                <p class="packages__option-name">Розовый фильтр</p>
+                <svg class="packages__image packages__image--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                   <path fill="#3dc644" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                 </svg>
-              </div>
-              <div class="packages__option">
-                <span>Комментарии</span>
-                <svg class="packages__image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+              </li>
+              <li class="packages__option">
+                <p class="packages__option-name">Розовый фильтр</p>
+                <svg class="packages__image packages__image--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                  <path fill="#3dc644" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+              </li>
+            </ul>
+            <ul class="packages__item">
+              <li class="packages__option">
+                <p class="packages__option-name">Смайлики</p>
+              </li>
+              <li class="packages__option">
+                <p class="packages__option-name">Смайлики</p>
+                <svg class="packages__image packages__image--no" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
                   <path fill="#f25b26" d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
                 </svg>
-              </div>
-            </li>
-          </ul>
-          <p class="packages__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
+              </li>
+              <li class="packages__option">
+                <p class="packages__option-name">Смайлики</p>
+                <svg class="packages__image packages__image--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                  <path fill="#3dc644" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+              </li>
+              <li class="packages__option">
+                <p class="packages__option-name">Смайлики</p>
+                <svg class="packages__image packages__image--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                  <path fill="#3dc644" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+              </li>
+            </ul>
+            <ul class="packages__item">
+              <li class="packages__option">
+                <p class="packages__option-name">Комментарии</p>
+              </li>
+              <li class="packages__option">
+                <p class="packages__option-name">Комментарии</p>
+                <svg class="packages__image packages__image--no" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                  <path fill="#f25b26" d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                </svg>
+              </li>
+              <li class="packages__option">
+                <p class="packages__option-name">Комментарии</p>
+                <svg class="packages__image packages__image--no" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                  <path fill="#f25b26" d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                </svg>
+              </li>
+              <li class="packages__option">
+                <p class="packages__option-name">Комментарии</p>
+                <svg class="packages__image packages__image--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                  <path fill="#3dc644" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+              </li>
+            </ul>
+          </div>
+          <div class="packages__toggles">
+            <button class="packages__toggle" type="button"><span class="visually-hidden">1</span></button>
+            <button class="packages__toggle" type="button"><span class="visually-hidden">2</span></button>
+            <button class="packages__toggle" type="button"><span class="visually-hidden">3</span></button>
+          </div>
         </div>
       </section>
       <section class="contacts">
         <h1 class="visually-hidden">Наши контакты</h1>
-        <div class="contacts__wrapper">
+        <div class="container contacts__content">
           <h2 class="contacts__banner">Остались вопросы? Свяжитесь с нами!</h2>
-          <p class="contacts__titles">Звоните:<br>
-            <a href="#">+7(812)555-66-66</a>
-          </p>
-          <p class="contacts__titles">Пишите:<br>
-            <a href="#">mail@htmlacademy.ru</a>
-          </p>
-          <p class="contacts__titles">Приезжайте в гости:<br>
-            <a href="#">ул. Большая Конюшенная, 19/8</a>
-          </p>
+          <div class="contacts__wrapper">
+            <div class="contacts__titles">
+              <p>Звоните:</p>
+              <a href="#">+7(812)555-66-66</a>
+            </div>
+            <div class="contacts__titles">
+              <p>Пишите:</p>
+              <a href="#">mail@htmlacademy.ru</a>
+            </div>
+            <div class="contacts__titles">
+              <p>Приезжайте в гости:</p>
+              <a href="#">ул. Большая Конюшенная, 19/8</a>
+            </div>
+          </div>
+          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002806!2d30.320858715677204!3d59.93871916905467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1558023116533!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
-      </section> -->
+      </section>
     </main>
     <footer class="page-footer">
       <div class="container page-footer__content page-footer__content--index">
-        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="100" height="100" alt="Логотип приложения Пинк">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип приложения Пинк">
+        </picture>
         <ul class="page-footer__social social">
           <li class="social__item">
             <a class="social__link social__link--tweeter" href="№">
@@ -227,20 +315,6 @@
         </div>
       </div>
     </footer>
-
-    <script>
-      var navCont = document.querySelector('.main-nav__content');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navToggle.addEventListener('click', function() {
-        if (navCont.classList.contains('.main-nav__content--opened')) {
-          navCont.classList.remove('.main-nav__content--opened');
-          navCont.classList.add('.main-nav__content--closed');
-        } else {
-          navCont.classList.add('.main-nav__content--closed');
-          navCont.classList.remove('.main-nav__content--opened');
-        }
-      });
-    </script>
+    <!-- <script src="js/main-nav.js"></script> -->
   </body>
 </html>
