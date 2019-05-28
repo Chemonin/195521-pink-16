@@ -54,6 +54,7 @@
 }
 
 .photo-adjust__menu {
+  .indent-reset();
   display: flex;
   width: 300px;
   flex-wrap: wrap;
@@ -123,6 +124,10 @@
   }
 }
 
+.photo-adjust__filter--contrast {
+  margin-right: 8px;
+}
+
 @media (min-width: @tablet-width) {
   .photo-adjust__icon {
     width: 25px;
@@ -139,7 +144,7 @@
 
 .photo-adjust__bar {
   display: none;
-  margin-top: 40px;
+  margin-top: 32px;
   position: relative;
   width: 242px;
 }
@@ -196,8 +201,8 @@
 }
 
 .photo-adjust__toggle--crop {
-  left: 200px;
-  top: -6px;
+  left: 190px;
+  top: -7px;
 }
 
 @media (min-width: @tablet-width) {
@@ -238,7 +243,7 @@
 .photo-adjust__preview {
   width: 280px;
   margin-top: 20px;
-  margin-bottom: 42px;
+  margin-bottom: 34px;
 }
 
 @media (min-width: @tablet-width) {

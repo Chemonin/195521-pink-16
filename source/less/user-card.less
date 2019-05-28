@@ -20,10 +20,16 @@
   }
 }
 
+.user-card__image {
+  .indent-reset();
+  display: flex;
+}
+
 .user-card__info {
   margin: 0;
-  margin-top: 20px;
-  padding: 0 20px;
+  margin-top: 18px;
+  padding: 0 18px;
+  //border: 1px solid red;
   display: flex;
   align-items: flex-start;
   text-align: left;
@@ -51,6 +57,7 @@
   font-size: 12px;
   line-height: 24px;
   font-weight: 300;
+  text-transform: uppercase;
 }
 
 .user-card__text {
@@ -106,15 +113,15 @@
 }
 
 .user-card__image--panoramic {
-  position: relative;
   width: 100%;
   margin: 0 auto;
   display: flex;
 }
 
 .user-card__info--panoramic {
-  padding: 0;
-  padding-top: 20px;
+  box-sizing: border-box;
+  position: relative;
+  padding-top: 18px;
   margin: 0 auto;
   width: 280px;
 
@@ -143,6 +150,10 @@
 
 .user-card__info--panoramic::before {
   content: "панорама дня";
+  position: absolute;
+  left: 50%;
+  top: -137px;
+  z-index: 1;
   width: 140px;
   height: 37px;
   background-color: #d22856;
@@ -155,10 +166,6 @@
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  position: absolute;
-  left: 50%;
-  bottom: 175px;
-  z-index: 1;
 }
 
 @media (min-width: @tablet-width) {

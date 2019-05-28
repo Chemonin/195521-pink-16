@@ -44,7 +44,13 @@
       </div>
       <section class="container users-photo">
         <article class="users-photo__item user-card user-card--panoramic">
-          <a href="#" ><img class="user-card__image user-card__image--panoramic" src="img/panorama-mobile@1x.jpg" width="300" height="200" alt="Панорамный вид"></a>
+          <a href="#">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="user-card__image user-card__image--panoramic" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@1x.jpg 1x, img/panorama-mobile@2x.jpg 2x" width="320px" height="137px" alt="Панорамный вид">
+            </picture>
+          </a>
           <blockquote class="user-card__info user-card__info--panoramic">
             <a href="#" class="user-card__name">Анна<span class="user-card__online">(5 минут назад)</span></a>
             <p class="user-card__text">
@@ -62,7 +68,13 @@
         </article>
         <div class="user-photo__simple">
           <article class="users-photo__item user-card">
-            <img class="user-card__image" src="img/photo-car-mobile@1x.jpg" width="300" height="200" alt="Автомобиль">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="user-card__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@1x.jpg 1x, img/photo-car-mobile@2x.jpg 2x" width="280px" height="180px" alt="Автомобиль">
+              </picture>
+            </a>
             <blockquote class="user-card__info">
               <a href="#" class="user-card__name">Левон<span class="user-card__online">(5 часов назад)</span></a>
               <p class="user-card__text">
@@ -79,7 +91,13 @@
             </blockquote>
           </article>
           <article class="users-photo__item user-card">
-            <img class="user-card__image" src="img/photo-drumset-mobile@1x.jpg" width="300" height="200" alt="Барабаны">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="user-card__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@1x.jpg 1x, img/photo-drumset-mobile@2x.jpg 2x" width="280px" height="180px" alt="Барабаны">
+              </picture>
+            </a>
             <blockquote class="user-card__info">
               <a href="#" class="user-card__name">Антон<span class="user-card__online">(12 часов назад)</span></a>
               <p class="user-card__text">
@@ -96,7 +114,13 @@
             </blockquote>
           </article>
           <article class="users-photo__item user-card">
-            <img class="user-card__image" src="img/photo-window-mobile@1x.jpg" width="300" height="200" alt="Небо над крышей">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img class="user-card__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@1x.jpg 1x, img/photo-window-mobile@2x.jpg 2x" width="280px" height="180px" alt="Небо над крышей">
+              </picture>
+            </a>
             <blockquote class="user-card__info">
               <a href="#" class="user-card__name">Борис<span class="user-card__online">(20 часов назад)</span></a>
               <p class="user-card__text">
@@ -113,7 +137,13 @@
             </blockquote>
           </article>
           <article class="users-photo__item user-card">
-            <img class="user-card__image" src="img/photo-fair-mobile@1x.jpg" width="300" height="200" alt="Кубанский рынок">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="user-card__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@1x.jpg 1x, img/photo-fair-mobile@2x.jpg 2x" width="280px" height="180px" alt="Кубанский рынок">
+              </picture>
+            </a>
             <blockquote class="user-card__info">
               <a href="#" class="user-card__name">Сергей<span class="user-card__online">(25 часов назад)</span></a>
               <p class="user-card__text">
@@ -130,7 +160,13 @@
             </blockquote>
           </article>
           <article class="users-photo__item user-card">
-            <img class="user-card__image" src="img/photo-pov-mobile@1x.jpg" width="300" height="200" alt="Горный спуск">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="user-card__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@1x.jpg 1x, img/photo-pov-mobile@2x.jpg 2x" width="280px" height="180px" alt="Горный спуск">
+              </picture>
+            </a>
             <blockquote class="user-card__info">
               <a href="#" class="user-card__name">Максим<span class="user-card__online">(40 часов назад)</span></a>
               <p class="user-card__text">
@@ -147,7 +183,13 @@
             </blockquote>
           </article>
           <article class="users-photo__item user-card">
-            <img class="user-card__image" src="img/photo-wing-mobile@1x.jpg" width="300" height="200" alt="Крыло самолета">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="user-card__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@1x.jpg 1x, img/photo-wing-mobile@2x.jpg 2x" width="280px" height="180px" alt="Крыло самолета">
+              </picture>
+            </a>
             <blockquote class="user-card__info">
               <a href="#" class="user-card__name">Надежда<span class="user-card__online">(45 часов назад)</span></a>
               <p class="user-card__text">
@@ -169,7 +211,10 @@
       </section>
       <section class="photo-adjust">
         <div class="container photo-adjust__wrapper">
-          <img class="photo-adjust__preview" src="img/photo-road-tablet@1x.jpg" width="200px" height="200px" alt="Фото снежной дороги">
+          <picture>
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+            <img class="photo-adjust__preview" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@1x.jpg 1x, img/photo-road-mobile@2x.jpg 2x" width="280px" height="374px" alt="Фото снежной дороги">
+          </picture>
           <form class="photo-adjust__menu" method="get" action="https://echo.htmlacademy.ru">
             <div class="photo-adjust__filters">
                 <input class="visually-hidden photo-adjust__checkbox" type="checkbox" name="crop" id="crop-filter" checked>
@@ -184,7 +229,7 @@
                 </div>
                 <input class="visually-hidden photo-adjust__checkbox" type="checkbox" name="fill" id="fill-filter">
                 <label class="photo-adjust__filter photo-adjust__filter--fill" for="fill-filter">
-                  <svg class="photo-adjust__icon photo-adjust__icon--crop" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                  <svg class="photo-adjust__icon photo-adjust__icon--fill" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                     <path fill="none" d="M0,0h48v48H0V0z"/>
                     <path fill="currentColor" d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
                     <rect fill="currentColor" y="40" width="48" height="3"/>
@@ -212,7 +257,10 @@
     </main>
     <footer class="page-footer">
       <div class="container page-footer__content">
-        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="100" height="100" alt="Логотип приложения Пинк">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип приложения Пинк">
+        </picture>
         <ul class="page-footer__social social">
           <li class="social__item">
             <a class="social__link social__link--tweeter" href="№">
