@@ -91,6 +91,13 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .main-nav__logo-image {
+    width: 163px;
+    margin-left: -20px;
+  }
+}
+
 .main-nav__list {
   width: 100%;
 }
@@ -193,6 +200,12 @@
   .main-nav__content--closed .main-nav__header {
     background-color: rgba(40, 54, 69, 0.7);
     border-bottom: none;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .main-nav__content--nojs .main-nav__toggle {
+    display: none;
   }
 }
 
