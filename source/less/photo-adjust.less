@@ -37,6 +37,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    //border: 1px solid green;
 
     &::after {
       display: none;
@@ -64,10 +65,11 @@
 
 @media (min-width: @tablet-width) {
   .photo-adjust__menu {
-    margin-top: 40px;
+    margin-top: 38px;
     flex-direction: row;
     justify-content: flex-start;
     width: 276px;
+    //border: 1px solid red;
   }
 }
 
@@ -91,7 +93,9 @@
 @media (min-width: @tablet-width) {
   .photo-adjust__filters {
     width: 100%;
+    align-items: flex-end;
     justify-content: flex-start;
+    //border: 1px solid red;
   }
 }
 
@@ -104,10 +108,10 @@
     .indent-reset();
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-end;
     order: 0;
     width: 55px;
-    height: 74px;
+    height: 55px;
     color: #d22856;
     border-bottom: 1px solid #dddfe0;
   }
@@ -129,9 +133,18 @@
 }
 
 @media (min-width: @tablet-width) {
+  .photo-adjust__filter--contrast {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
   .photo-adjust__icon {
     width: 25px;
     height: 25px;
+    margin-left: 2px;
+    margin-bottom: 22px;
+    //border: 1px solid green;
   }
 }
 
@@ -139,6 +152,27 @@
   .photo-adjust__icon {
     width: 45px;
     height: 45px;
+
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo-adjust__icon--contrast {
+    margin-left: 10px;
+    margin-bottom: 26px;
+    width: 17px;
+    height: 17px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-adjust__icon--contrast {
+    margin-left: 8px;
+    margin-bottom: 20px;
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -163,11 +197,15 @@
 @media (min-width: @tablet-width) {
   .photo-adjust__bar {
     margin: 0;
-    margin-top: 74px;
+    margin-top: 73px;
     width: 200px;
     flex-grow: 1;
     display: block;
     border-bottom: 1px solid #dddfe0;
+
+    &:last-child {
+      margin-top: 69px;
+    }
 
     &::before {
       top: -36px;
@@ -181,7 +219,8 @@
     width: 345px;
 
     &::before {
-      left: 24px;
+      top: -34px;
+      left: 36px;
       width: 290px;
     }
   }
@@ -207,14 +246,15 @@
 
 @media (min-width: @tablet-width) {
   .photo-adjust__toggle--crop {
-    left: 154px;
+    left: 148px;
     top: -43px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .photo-adjust__toggle--crop {
-    left: 78px;
+    left: 108px;
+    top: -40px;
   }
 }
 
@@ -223,9 +263,16 @@
   top: -43px;
 }
 
+@media (min-width: @tablet-width) {
+  .photo-adjust__toggle--fill {
+    left: 27px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .photo-adjust__toggle--fill {
-    left: 254px;
+    left: 284px;
+    top: -40px;
   }
 }
 
@@ -234,9 +281,16 @@
   top: -43px;
 }
 
+@media (min-width: @tablet-width) {
+  .photo-adjust__toggle--contrast {
+    left: 97px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .photo-adjust__toggle--contrast {
-    left: 168px;
+    left: 198px;
+    top: -40px;
   }
 }
 
@@ -249,13 +303,14 @@
 @media (min-width: @tablet-width) {
   .photo-adjust__preview {
     margin-top: 57px;
-    margin-bottom: 54px;
+    margin-bottom: 47px;
     width: 300px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .photo-adjust__preview {
+    margin-bottom: 51px;
     margin-left: 80px;
   }
 }
@@ -272,6 +327,13 @@
   background-color: transparent;
   border: 3px solid #d22856;
   border-radius: 50px 50px 50px 50px;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-adjust__send {
+    margin-top: 68px;
+    margin-bottom: 24px;
+  }
 }
 
 .photo-adjust__reset {
@@ -298,7 +360,7 @@
   .photo-adjust__reset,
   .photo-adjust__send {
     margin: 0;
-    margin-top: 143px;
+    margin-top: 147px;
     width: 184px;
   }
 }

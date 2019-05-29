@@ -13,7 +13,11 @@
         <div class="main-nav__content main-nav__content--closed main-nav__content--nojs">
           <div class="main-nav__header">
             <a href="index.html">
-              <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="100" height="100" alt="Логотип приложения Пинк">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg" width="146" height="40">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="100" height="100" alt="Логотип приложения Пинк">
+              </picture>
             </a>
           </div>
           <button class="main-nav__toggle" type="button">
@@ -45,10 +49,10 @@
       <section class="container users-photo">
         <article class="users-photo__item user-card user-card--panoramic">
           <a href="#">
-            <picture>
+            <picture class="user-card__image user-card__image--panoramic">
               <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-              <img class="user-card__image user-card__image--panoramic" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@1x.jpg 1x, img/panorama-mobile@2x.jpg 2x" width="320px" height="137px" alt="Панорамный вид">
+              <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@1x.jpg 1x, img/panorama-mobile@2x.jpg 2x" width="320px" height="137px" alt="Панорамный вид">
             </picture>
           </a>
           <blockquote class="user-card__info user-card__info--panoramic">
@@ -69,10 +73,10 @@
         <div class="user-photo__simple">
           <article class="users-photo__item user-card">
             <a href="#">
-              <picture>
+              <picture class="user-card__image">
                 <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-                <img class="user-card__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@1x.jpg 1x, img/photo-car-mobile@2x.jpg 2x" width="280px" height="180px" alt="Автомобиль">
+                <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@1x.jpg 1x, img/photo-car-mobile@2x.jpg 2x" width="280px" height="180px" alt="Автомобиль">
               </picture>
             </a>
             <blockquote class="user-card__info">
@@ -92,10 +96,10 @@
           </article>
           <article class="users-photo__item user-card">
             <a href="#">
-              <picture>
+              <picture class="user-card__image">
                 <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
-                <img class="user-card__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@1x.jpg 1x, img/photo-drumset-mobile@2x.jpg 2x" width="280px" height="180px" alt="Барабаны">
+                <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@1x.jpg 1x, img/photo-drumset-mobile@2x.jpg 2x" width="280px" height="180px" alt="Барабаны">
               </picture>
             </a>
             <blockquote class="user-card__info">
@@ -115,10 +119,10 @@
           </article>
           <article class="users-photo__item user-card">
             <a href="#">
-              <picture>
+              <picture class="user-card__image">
                 <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
-                <img class="user-card__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@1x.jpg 1x, img/photo-window-mobile@2x.jpg 2x" width="280px" height="180px" alt="Небо над крышей">
+                <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@1x.jpg 1x, img/photo-window-mobile@2x.jpg 2x" width="280px" height="180px" alt="Небо над крышей">
               </picture>
             </a>
             <blockquote class="user-card__info">
@@ -138,10 +142,10 @@
           </article>
           <article class="users-photo__item user-card">
             <a href="#">
-              <picture>
+              <picture class="user-card__image">
                 <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
-                <img class="user-card__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@1x.jpg 1x, img/photo-fair-mobile@2x.jpg 2x" width="280px" height="180px" alt="Кубанский рынок">
+                <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@1x.jpg 1x, img/photo-fair-mobile@2x.jpg 2x" width="280px" height="180px" alt="Кубанский рынок">
               </picture>
             </a>
             <blockquote class="user-card__info">
@@ -161,10 +165,10 @@
           </article>
           <article class="users-photo__item user-card">
             <a href="#">
-              <picture>
+              <picture class="user-card__image">
                 <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-                <img class="user-card__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@1x.jpg 1x, img/photo-pov-mobile@2x.jpg 2x" width="280px" height="180px" alt="Горный спуск">
+                <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@1x.jpg 1x, img/photo-pov-mobile@2x.jpg 2x" width="280px" height="180px" alt="Горный спуск">
               </picture>
             </a>
             <blockquote class="user-card__info">
@@ -184,10 +188,10 @@
           </article>
           <article class="users-photo__item user-card">
             <a href="#">
-              <picture>
+              <picture class="user-card__image">
                 <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
-                <img class="user-card__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@1x.jpg 1x, img/photo-wing-mobile@2x.jpg 2x" width="280px" height="180px" alt="Крыло самолета">
+                <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@1x.jpg 1x, img/photo-wing-mobile@2x.jpg 2x" width="280px" height="180px" alt="Крыло самолета">
               </picture>
             </a>
             <blockquote class="user-card__info">
@@ -206,7 +210,7 @@
             </blockquote>
           </article>
         </div>
-        <p class="users-photo__offer">Затмите из всех!</p>
+        <p class="users-photo__offer">Затмите их всех!</p>
         <p class="users-photo__placing">Выкладывайте все, что накопилось в телефоне!</p>
       </section>
       <section class="photo-adjust">
@@ -240,7 +244,7 @@
                 </div>
                 <input class="visually-hidden photo-adjust__checkbox" type="checkbox" name="contrast" id="contrast-filter">
                 <label class="photo-adjust__filter photo-adjust__filter--contrast" for="contrast-filter">
-                  <svg class="photo-adjust__icon photo-adjust__icon--crop" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                  <svg class="photo-adjust__icon photo-adjust__icon--contrast" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
                     <path fill="currentColor" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
                     <path fill="currentColor" d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
                   </svg>
@@ -259,9 +263,9 @@
       <div class="container page-footer__content">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
-          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип приложения Пинк">
+          <img class="page-footer__logo-image page-footer__logo-image--photo" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип приложения Пинк">
         </picture>
-        <ul class="page-footer__social social">
+        <ul class="page-footer__social page-footer__social--photo social">
           <li class="social__item">
             <a class="social__link social__link--tweeter" href="№">
               <span class="visually-hidden">Мы в Твиттере</span>
@@ -291,7 +295,7 @@
             </a>
           </li>
         </ul>
-        <div class="page-footer__copyright copyright">
+        <div class="page-footer__copyright page-footer__copyright--photo copyright">
             <span class="copyright__text">Разработано</span>
             <a class="copyright__link" href="#">
               <span class="visually-hidden">HTML Academy</span>
