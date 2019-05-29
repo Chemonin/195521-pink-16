@@ -11,8 +11,8 @@
 .form__title {
   .indent-reset();
   width: 280px;
-  margin-top: 47px;
-  margin-bottom: 42px;
+  margin-top: 43px;
+  margin-bottom: 34px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
@@ -69,6 +69,7 @@
 
 .form__fullname {
   padding: 0 20px;
+  margin-bottom: 22px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -132,7 +133,7 @@
 
 .form__field-title {
   margin-left: 23px;
-  margin-bottom: 7px;
+  margin-bottom: 5px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
@@ -141,13 +142,14 @@
 }
 
 .form__field {
-  padding-left: 23px;
+  padding-left: 21px;
   padding-top: 17px;
   padding-bottom: 11px;
   margin-bottom: 19px;
   width: 100%;
   box-sizing: border-box;
 
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
@@ -224,13 +226,12 @@
 .form__progress-name {
   position: relative;
   margin-left: 90px;
-  margin-bottom: 52px;
+  margin-bottom: 51px;
 
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
   color: #283645;
-  //border: 1px solid red;
 }
 
 @media (min-width: @tablet-width) {
@@ -247,7 +248,7 @@
 
 .form__progress-name::before {
   position: absolute;
-  left: -85px;
+  left: -70px;
   top: -4px;
   content: "";
   width: 39px;
@@ -298,6 +299,9 @@
 }
 
 .form__contacts {
+  margin-top: 30px;
+  margin-bottom: 24px;
+  padding: 0 20px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -433,7 +437,7 @@
 }
 
 .form__application {
-  padding-top: 120px;
+  padding-top: 113px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -469,7 +473,7 @@
 .form__titles--application {
   position: absolute;
   left: 50%;
-  top: 40px;
+  top: 37px;
   margin-left: -113px;
   width: 226px;
   //border: 1px solid red;
@@ -488,7 +492,7 @@
 .form__app-environ {
   position: relative;
   margin-left: 90px;
-  margin-bottom: 52px;
+  margin-bottom: 45px;
 
   font-size: 18px;
   line-height: 30px;
@@ -504,7 +508,7 @@
 
 .form__app-environ::before {
   position: absolute;
-  left: -85px;
+  left: -69px;
   top: -4px;
   content: "";
   width: 39px;
@@ -517,7 +521,7 @@
 
 .form__radio:checked + .form__app-environ::after {
   position: absolute;
-  left: -73px;
+  left: -57px;
   top: 8px;
   content: "";
   width: 15px;
@@ -528,8 +532,14 @@
 }
 
 .form__emotions {
+  .indent-reset();
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   position: relative;
   border: none;
+
 }
 
 @media (min-width: @tablet-width) {
@@ -561,8 +571,8 @@
 
 .form__titles--emotions {
   margin: 0 auto;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin-top: 37px;
+  margin-bottom: 15px;
 }
 
 @media (min-width: @tablet-width) {
@@ -581,11 +591,12 @@
 
 .form__field--emotions {
   width: 280px;
-  min-height: 197px;
+  min-height: 202px;
   padding-left: 20px;
+  padding-right: 20px;
   resize: none;
   font-family: inherit;
-  padding-right: 20px;
+
 }
 
 @media (min-width: @tablet-width) {
@@ -604,14 +615,16 @@
 
 .form__send {
   margin: 0 auto;
-  margin-top: 48px;
+  margin-top: 31px;
   width: 280px;
   height: 63px;
 
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   color: #ffffff;
+  text-transform: uppercase;
 
   background-color: #2aab6d;
   border: none;
@@ -634,11 +647,17 @@
 }
 
 .form__necessarily {
-  margin-top: 36px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 33px;
+  margin-bottom: 18px;
+  margin-left: 72px;
   font-size: 14px;
   line-height: 30px;
+  text-transform: uppercase;
 
   sup {
+    margin-right: 14px;
     color: #d22856;
   }
 

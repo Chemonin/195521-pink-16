@@ -53,7 +53,7 @@
             <label class="form__field-title form__field-title--patronymic" for="patronymic">Отчество:</label>
             <input class="form__field form__field--patronymic" type="text" id="patronymic" name="form-patronymic" placeholder="Ну и отчество тоже">
           </div>
-          <fieldset class="form__progress">
+          <div class="form__progress">
             <legend class="form__titles form__titles--progress">Ваши безбашенные достижения в путешествии</legend>
 
             <input class="visually-hidden form__progress-checkbox" type="checkbox" name="shark" id="shark-filter" checked>
@@ -73,15 +73,15 @@
 
             <input class="visually-hidden form__progress-checkbox" type="checkbox" name="hotel" id="hotel-filter">
             <label class="form__progress-name form__progress-name--hotel" for="hotel-filter">Разгромил отель</label>
-          </fieldset>
-          <fieldset class="form__contacts">
+          </div>
+          <div class="form__contacts">
             <legend class="form__titles form__titles--contacts">Контактная информация</legend>
             <label class="form__field-title form__field-title--phone" for="phone"><div class="form__field-icon form__field-icon--phone"></div>Номер телефона</label>
             <input class="form__field form__field--phone" type="text" id="phone" name="form-phone" placeholder="Номер, пожалуйста">
             <label class="form__field-title form__field-title--email" for="email"><div class="form__field-icon"></div>Адрес почты</label>
             <input class="form__field form__field--email" type="text" id="email" name="form-email" placeholder="Введите почту*">
-          </fieldset>
-          <fieldset class="form__application">
+          </div>
+          <div class="form__application">
             <legend class="form__titles form__titles--application">С каким приложением путешествовали?</legend>
 
             <input class="visually-hidden form__radio form__radio-ios" type="radio" id="ios" name="application" checked>
@@ -92,11 +92,11 @@
 
             <input class="visually-hidden form__radio form__radio-windows" type="radio" id="windows" name="application">
             <label class="form__app-environ" for="windows">Windows Phone</label>
-          </fieldset>
-          <fieldset class="form__emotions">
+          </div>
+          <div class="form__emotions">
             <legend class="form__titles form__titles--emotions">опишите свои эмоции</legend>
               <textarea class="form__field form__field--emotions" name="form-emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </fieldset>
+          </div>
           <button class="form__send" type="submit">отправить форму</button>
           <p class="form__necessarily"><sup>*</sup>-обязательные <span>для заполнения</span> поля</p>
         </form>
@@ -104,8 +104,11 @@
     </main>
     <footer class="page-footer">
       <div class="container page-footer__content">
-        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="100" height="100" alt="Логотип приложения Пинк">
-        <ul class="page-footer__social social">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img class="page-footer__logo-image page-footer__logo-image--photo" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип приложения Пинк">
+        </picture>
+        <ul class="page-footer__social page-footer__social--photo social">
           <li class="social__item">
             <a class="social__link social__link--tweeter" href="№">
               <span class="visually-hidden">Мы в Твиттере</span>
@@ -135,7 +138,7 @@
             </a>
           </li>
         </ul>
-        <div class="page-footer__copyright copyright">
+        <div class="page-footer__copyright page-footer__copyright--photo copyright">
             <span class="copyright__text">Разработано</span>
             <a class="copyright__link" href="#">
               <span class="visually-hidden">HTML Academy</span>
