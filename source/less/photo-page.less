@@ -24,10 +24,10 @@
 
 .photo-page__intro {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-
-  min-height: 185px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 163px;
   font-size: 14px;
   line-height: 30px;
   background-color: #ffffff;
@@ -35,32 +35,35 @@
 
 @media (min-width: @tablet-width) {
   .photo-page__intro {
-    min-height: 228px;
+    min-height: 187px;
+    font-size: 18px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .photo-page__intro {
     min-height: 241px;
+    //border: 1px solid red;
   }
 }
 
 .photo-page__intro p {
   .indent-reset();
-  margin-top: 47px;
+  margin-top: 44px;
   width: 245px;
 }
 
 @media (min-width: @tablet-width) {
   .photo-page__intro p {
-    margin-top: 100px;
+    margin-top: 91px;
     width: 440px;
   }
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .photo-page__intro p {
-    width: 450px;
+    margin-top: 91px;
+    width: 640px;
   }
 }
 

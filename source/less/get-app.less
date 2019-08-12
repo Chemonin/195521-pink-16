@@ -86,21 +86,27 @@
   position: absolute;
   width: 258px;
   left: 0;
-  bottom: 275px;
+  bottom: 270px;
   z-index: 1;
+
+  img {
+    width: 100%;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .get-app__image {
     width: 700px;
-    left: 0;
-    bottom: 0;
+    left: -20px;
+    bottom: -5px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .get-app__image {
     width: 1050px;
+    left: 20px;
+    bottom: -5px;
   }
 }
 
@@ -143,8 +149,10 @@
 
 @media (min-width: @desktop-width) {
   .get-app__banner {
-    margin-top: 49px;
-    margin-bottom: 66px;
+    margin-top: 51px;
+    margin-bottom: 71px;
+
+    font-size: 21px;
   }
 }
 
@@ -170,6 +178,7 @@
 
 @media (min-width: @desktop-width) {
   .get-app__slogan {
+    margin-bottom: 0;
     width: auto;
     font-size: 50px;
     line-height: 60px;
@@ -191,5 +200,11 @@
 
     margin-top: 16px;
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .get-app__environ {
+    margin-top: 33px;
   }
 }

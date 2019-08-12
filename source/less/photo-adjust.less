@@ -54,6 +54,7 @@
 }
 
 .photo-adjust__menu {
+  .indent-reset();
   display: flex;
   width: 300px;
   flex-wrap: wrap;
@@ -63,7 +64,7 @@
 
 @media (min-width: @tablet-width) {
   .photo-adjust__menu {
-    margin-top: 40px;
+    margin-top: 38px;
     flex-direction: row;
     justify-content: flex-start;
     width: 276px;
@@ -90,6 +91,7 @@
 @media (min-width: @tablet-width) {
   .photo-adjust__filters {
     width: 100%;
+    align-items: flex-end;
     justify-content: flex-start;
   }
 }
@@ -103,10 +105,10 @@
     .indent-reset();
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-end;
     order: 0;
     width: 55px;
-    height: 74px;
+    height: 55px;
     color: #d22856;
     border-bottom: 1px solid #dddfe0;
   }
@@ -123,10 +125,22 @@
   }
 }
 
+.photo-adjust__filter--contrast {
+  margin-right: 8px;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-adjust__filter--contrast {
+    margin-right: 0;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .photo-adjust__icon {
     width: 25px;
     height: 25px;
+    margin-left: 2px;
+    margin-bottom: 22px;
   }
 }
 
@@ -134,12 +148,33 @@
   .photo-adjust__icon {
     width: 45px;
     height: 45px;
+
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo-adjust__icon--contrast {
+    margin-left: 10px;
+    margin-bottom: 26px;
+    width: 17px;
+    height: 17px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-adjust__icon--contrast {
+    margin-left: 8px;
+    margin-bottom: 20px;
+    width: 30px;
+    height: 30px;
   }
 }
 
 .photo-adjust__bar {
   display: none;
-  margin-top: 40px;
+  margin-top: 32px;
   position: relative;
   width: 242px;
 }
@@ -158,11 +193,15 @@
 @media (min-width: @tablet-width) {
   .photo-adjust__bar {
     margin: 0;
-    margin-top: 74px;
+    margin-top: 73px;
     width: 200px;
     flex-grow: 1;
     display: block;
     border-bottom: 1px solid #dddfe0;
+
+    &:last-child {
+      margin-top: 69px;
+    }
 
     &::before {
       top: -36px;
@@ -176,7 +215,8 @@
     width: 345px;
 
     &::before {
-      left: 24px;
+      top: -34px;
+      left: 36px;
       width: 290px;
     }
   }
@@ -196,20 +236,21 @@
 }
 
 .photo-adjust__toggle--crop {
-  left: 200px;
-  top: -6px;
+  left: 190px;
+  top: -7px;
 }
 
 @media (min-width: @tablet-width) {
   .photo-adjust__toggle--crop {
-    left: 154px;
+    left: 148px;
     top: -43px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .photo-adjust__toggle--crop {
-    left: 78px;
+    left: 108px;
+    top: -40px;
   }
 }
 
@@ -218,9 +259,16 @@
   top: -43px;
 }
 
+@media (min-width: @tablet-width) {
+  .photo-adjust__toggle--fill {
+    left: 27px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .photo-adjust__toggle--fill {
-    left: 254px;
+    left: 284px;
+    top: -40px;
   }
 }
 
@@ -229,28 +277,36 @@
   top: -43px;
 }
 
+@media (min-width: @tablet-width) {
+  .photo-adjust__toggle--contrast {
+    left: 97px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .photo-adjust__toggle--contrast {
-    left: 168px;
+    left: 198px;
+    top: -40px;
   }
 }
 
 .photo-adjust__preview {
   width: 280px;
   margin-top: 20px;
-  margin-bottom: 42px;
+  margin-bottom: 34px;
 }
 
 @media (min-width: @tablet-width) {
   .photo-adjust__preview {
     margin-top: 57px;
-    margin-bottom: 54px;
+    margin-bottom: 47px;
     width: 300px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .photo-adjust__preview {
+    margin-bottom: 51px;
     margin-left: 80px;
   }
 }
@@ -260,6 +316,8 @@
   margin-top: 74px;
   margin-bottom: 13px;
   width: 280px;
+
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
@@ -269,10 +327,19 @@
   border-radius: 50px 50px 50px 50px;
 }
 
+@media (min-width: @tablet-width) {
+  .photo-adjust__send {
+    margin-top: 68px;
+    margin-bottom: 24px;
+  }
+}
+
 .photo-adjust__reset {
   padding: 15px 0;
   margin-bottom: 41px;
   width: 280px;
+
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
@@ -293,7 +360,7 @@
   .photo-adjust__reset,
   .photo-adjust__send {
     margin: 0;
-    margin-top: 143px;
+    margin-top: 147px;
     width: 184px;
   }
 }
